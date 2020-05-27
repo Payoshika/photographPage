@@ -1,0 +1,27 @@
+.navbar{
+  z-index: 20;
+}
+
+.banner{
+  left: 0;
+  top: 0;
+}
+
+.logoTitle{
+  right: 20%;
+  top: 20%;
+  border: solid 1px black;
+}
+
+
+p{
+  line-height: 2.5rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
