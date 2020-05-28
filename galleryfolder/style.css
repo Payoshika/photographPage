@@ -1,0 +1,128 @@
+h2{
+  font-family: 'Caveat', cursive;
+}
+
+p,span, a, i{
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Patrick Hand', cursive; */
+}
+
+body{
+  background-color: #f7f7f7;
+}
+
+body a {
+  color: black;
+}
+
+.navbar{
+  height: 3rem;
+  background-color: #f7f7f7;
+  border-bottom: solid 1px black;
+}
+
+.navbar-nav{
+  display: flex;
+}
+
+.gallery-cotainer {
+  height: 53rem !important;
+  overflow: hidden;
+}
+
+.gallery{
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 0.7s;
+  transition-timing-function : ease;
+}
+
+.photo-container{
+  width: 25rem;
+  height: 14rem;
+  transition-property: all;
+  transition-duration: 0.7s;
+  transition-timing-function : ease;
+}
+
+.photo-1{
+  top: 5rem;
+  left: 5rem;
+}
+
+.photo-2{
+  top: 30rem;
+  left: 60rem;
+}
+
+.photo-3{
+  top: 5rem;
+  left: 60rem;
+  width: 35rem;
+  height: 20rem;
+}
+
+.photo-4{
+  top: 20rem;
+  left: 13rem;
+  width: 40rem;
+  height: 27rem;
+}
+
+.photo-5{
+  top: 9rem;
+  left: 36rem;
+  width: 16rem;
+  height: 9rem;
+}
+
+.photo-6{
+  top: 10rem;
+  left: 33rem;
+  width: 50rem;
+  height: 32rem;
+}
+.photo-7{
+  top: 10rem;
+  left: 9rem;
+}
+.photo-8{
+  top: 28rem;
+  left: 9rem;
+}
+.photo-9{
+  top: 15rem;
+  left: 84rem;
+  width: 17rem;
+  height: 25rem;
+}
+
+.enlargePhoto {
+  width: 80rem;
+  height: 45rem;
+  top: 3rem;
+  left: 16rem;
+  z-index: 1000;
+}
+
+.img-fluid{
+  height: 100%;
+  padding: 5px;
+  border: solid 1px #185284;
+}
+
+.delete {
+  right: 4rem;
+  top: 0
+}
+
+.pointer{
+  margin-top: 50rem;
+  text-align: center;
+}
+
+.slide-up{
+  transform: translateY(-100%);
+}
