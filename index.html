@@ -3,69 +3,64 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-     <link href="./fontawsomeicon/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:wght@300;400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+   <link href="./fontawsomeicon/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Kohei's Personal Portfolio</title>
   </head>
   <body class="position-relative">
     <!-- simple navbar -->
-    <nav class="navbar navbar-expand-md d-flex justify-content-center z-100">
-      <div class="navbar-nav d-flex justify-content-center">
-        <a class="nav-item nav-link px-3 mx-3" href="#">About</a>
-        <a class="nav-item nav-link px-3 mx-3" href="#">Story</a>
-        <a class="nav-item nav-link px-3 mx-3" href="#">Gallery</a>
+    <nav class="navbar navbar-expand-md d-flex flex-row justify-content-center w-100 z-10">
+      <div class="navbar-nav flex-row justify-content-center">
+        <a class="nav-item nav-link px-3 mx-4" href="#">About</a>
+        <a class="nav-item nav-link px-3 mx-4" href="#">Story</a>
+        <a class="nav-item nav-link px-3 mx-4" href="#">Gallery</a>
       </div>
     </nav>
+
     <!-- Banner Page: overriding the navbar -->
-    <div class="banner w-100">
+    <div class="banner w-100 py-2">
       <!-- carousel effect here -->
-      <div id="bannerPhoto" class="carousel slide w-100" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1000" height="600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"/><text fill="#555" dy=".3em" x="50%" y="50%">First slide</text>
-            </svg>
+      <div id="bannerPhoto" class="carousel slide w-100 position-relative" data-ride="carousel">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img class="d-block w-100 h-100" src="./image/DSC_1284.jpg" alt="第1スライド">
+          </div><!-- /.carousel-item -->
+          <div class="carousel-item h-100">
+            <img class="d-block w-100 h-100" src="./image/DSC_1271.jpg" alt="第2スライド">
+          </div><!-- /.carousel-item -->
+          <div class="carousel-item h-100">
+            <img class="d-block w-100 h-100" src="./image/DSC_1209.jpg" alt="第3スライド">
+          </div><!-- /.carousel-item -->
+          <!-- Kohei's Profile display above 600px -->
+          <div class="logoTitle position-absolute">
+            <div class="innerBox w-100 d-flex flex-column justify-content-center align-items-center text-center">
+              <h2 class="d-block">85mm Closer</h2>
+              <h2 class="d-block">Sight from Behind</h2>
+            </div>
           </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1000" height="600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Second slide"><title>Placeholder</title><rect fill="#666" width="100%" height="100%"/><text fill="#444" dy=".3em" x="50%" y="50%">Second slide</text>
-            </svg>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1000" height="600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Third slide"><title>Placeholder</title><rect fill="#555" width="100%" height="100%"/><text fill="#333" dy=".3em" x="50%" y="50%">Third slide</text>
-            </svg>
-          </div>
-          <!-- Kohei's Profile here -->
-          <div class="logoTitle position-absolute d-flex flex-column justify-content-center">
-            <p>Kohei<br>Oishi</p>
-            <p>Sight from Behind</p>
+          <!-- Kohei's Profile display below 600px -->
+          <div class="logoTitleSmall position-absolute flex-column text-white my-0">
+            <h2 class="text-left my-0">Sight from Behind</h2>
+            <h2 class="text-right my-0">By '85mm Closer'</h2>
           </div>
         </div>
       </div>
     </div>
-
     <div class="story container-fluid position-relative my-4">
       <div class="row w-100">
-        <div class="col-12 text-center">
-          <h3 class="my-4" >headline</h3>
-          <p>stories here. stories here. stories here.</p>
-          <p>stories here. stories here. stories here.</p>
-          <p>stories here. stories here. stories here.</p>
-          <p>stories here. stories here. stories here.</p>
-          <p>stories here. stories here. stories here.</p>
+        <div class="col-12 article text-center">
+          <h2 class="my-4" >headline</h2>
+          <p>Street Photography is getting more and more dificult these days.. anything you shot would hinge on certain copy  rights. Especially shooting people is almost impossible.. except from one angle... behind. as it would not reveal the  indentity. I started shooting people in the various street in Tokyo when I was working in central Tokyo area. directing  camera lenz to people would make them frown, so I started taking photos of people only from the behind. at first, it was a substitutive solution.. however, gradually I came to realize, that sometimes people's back would tell more stories than front</p>
         </div>
-        <div class="col-12 text-center">
-          <img class="my-4"src="https://via.placeholder.com/150C/O https:/placeholder.com/" alt="">
-          <p>stories here. stories here. stories here.</p>
-          <p>stories here. stories here. stories here.</p>
-          <p>stories here. stories here. stories here.</p>
-          <p>stories here. stories here. stories here.</p>
-          <p>stories here. stories here. stories here.</p>
-          <img class="my-4" src="https://via.placeholder.com/150C/O https:/placeholder.com/" alt="">
+        <div class="col-12 article text-center">
+          <img class="img-fluid w-100 rounded my-4 "src="./image/DSC_9944.jpg" alt="">
+          <p>I always liked the movies that conveys subtle emotions from the tiny motion of your face, or the way you walk. for me, street photograhy from behid is something similar of that kind. Thereafter, I started taking photos from the behind. untill facial recognition or any other sorts of detective technology makes it possible to tell who you are from the behind look, and people get really conscious of any representation of their image on the web, I would enjoy this time-bound story chatching activities. </p>
         </div>
       </div>
     </div>
-    <footer class= "container-fluid">
+    <footer class= "container-fluid my-4">
       <div class= "row w-100">
         <div class="col-12 d-flex justify-content-around">
           <a href="">Back to Top</a>
@@ -74,10 +69,11 @@
       </div>
     </footer>
 
-
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="motion.js" type="text/javascript">
+
+  </script>
   </body>
 </html>

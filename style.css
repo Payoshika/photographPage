@@ -1,27 +1,96 @@
-.navbar{
-  z-index: 20;
+h2{
+  font-family: 'Caveat', cursive;
 }
 
-.banner{
-  left: 0;
-  top: 0;
+p,span, a, i{
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Patrick Hand', cursive; */
+}
+
+body{
+  background-color: #f7f7f7;
+}
+
+body a {
+  color: black;
+}
+
+.navbar{
+  height: 3rem;
+  background-color: #f7f7f7;
+}
+
+.navbar-nav{
+  display: flex;
+}
+
+.banner {
+  border-bottom: 0.9px solid #818181;
+  border-top: 0.9px solid #818181;
 }
 
 .logoTitle{
-  right: 20%;
+  display: none;
+  width: 15rem;
+  height: 15rem;
+  right: 10%;
   top: 20%;
-  border: solid 1px black;
+  padding: 8px;
+  background-color: rgba(230, 230, 230, 0.9);
 }
 
-
-p{
-  line-height: 2.5rem;
+.logoTitle p{
+  font-size: 1.8rem;
 }
 
+.innerBox{
+  border: 0.9px solid #818181;
+}
+
+.logoTitleSmall{
+  display: flex;
+  width: 50%;
+  left: 5%;
+  bottom: 0;
+}
+
+.logoTitleSmall p{
+  color: rgba(230, 230, 230, 0.7);;
+}
+
+.col-12{
+  opacity: 0.2;
+  transition-property: all;
+  transition-duration: 2.0s;
+  transition-timing-function : ease;
+}
+
+.article p{
+  display: inline-block;
+  max-width: 35rem;
+  line-height: 4.5rem;
+}
+
+.article img{
+  max-width: 35rem;
+  display: block;
+  margin: 0 auto;
+  padding: 3px;
+  border: 0.9px solid #818181;
+}
 
 @media screen and (min-width: 768px) {
   .container-fluid {
     padding-left: 180px;
     padding-right: 180px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .logoTitle {
+    display: flex;
+  }
+  .logoTitleSmall{
+    display: none;
   }
 }
