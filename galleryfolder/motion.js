@@ -1,19 +1,19 @@
 var photoContainer = $(".photo-container")
 var image = $(".img-fluid")
-var mark = $(`<div class ="delete text-right position-absolute">×</div>`)
+var mark = $(`<div class ="delete text-right position-absolute"><i class="fas fa-backspace"></i></div>`)
 
 image.on("click", function(event){
-  var photoId = $(this).data("photo")
-  $(`.photo-container:nth-child(${photoId})`).addClass("enlargePhoto")
-  $(`.photo-container:nth-child(${photoId})`).append(mark)
-  $(`.photo-container:nth-child(${photoId})`).siblings().hide(2000)
+  $(this).parent().addClass("enlargePhoto")
+  $(this).parent().append(mark)
+  $(this).parent().siblings().hide(2000)
 })
 
 mark.on("click", function(event){
-  var photoId = $(this).prev().data("photo")
-  $(`.photo-container:nth-child(${photoId})`).removeClass("enlargePhoto")
-  $(`.photo-container:nth-child(${photoId})`).remove(mark)
-  $(`.photo-container:nth-child(${photoId})`).siblings().show(2000)
+  // $(this).parent().addClass("transitionNg")
+  $(this).parent().removeClass("enlargePhoto")
+  $(this).parent().remove(mark)
+  $(this).parent().siblings().show(2000)
+  // $(this).parent().removeClass("transitionNg")
 })
 
 var upPointer = $(".pointer1")

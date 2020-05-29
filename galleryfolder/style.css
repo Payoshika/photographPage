@@ -2,23 +2,41 @@ h2{
   font-family: 'Caveat', cursive;
 }
 
-p,span, a, i{
+p, a{
   font-family: 'Open Sans', sans-serif;
+  color: #373839;
+  font-size: 1.2rem;
   /* font-family: 'Patrick Hand', cursive; */
 }
 
-body{
-  background-color: #f7f7f7;
+i {
+  font-size: 2rem;
+  color: #373839;
+}
+i:hover{
+  color: #373839;
+  font-size: 2.5rem;
 }
 
-body a {
-  color: black;
+span {
+  font-family: 'Open Sans', sans-serif;
+  color: #373839;
+  font-size: 0.7rem;
+}
+
+a:hover {
+  color: #373839;
+  border-bottom: solid 1px #373839;
+}
+
+body{
+  background-color: #fcf8f3;
 }
 
 .navbar{
-  height: 3rem;
-  background-color: #f7f7f7;
-  border-bottom: solid 1px black;
+  height: 4em;
+  background-color: #fcf8f3;
+  border-bottom: solid 1px #818181;
 }
 
 .navbar-nav{
@@ -28,12 +46,19 @@ body a {
 .gallery-cotainer {
   height: 53rem !important;
   overflow: hidden;
+  margin-bottom: 2rem;
+  border-bottom: solid 1px #818181;
+  transition-property: all;
+  transition-duration: 0.7s;
+  transition-timing-function : ease;
 }
 
 .gallery{
   height: 100%;
   display: flex;
   overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: scroll;
   transition-property: all;
   transition-duration: 0.7s;
   transition-timing-function : ease;
@@ -42,80 +67,87 @@ body a {
 .photo-container{
   width: 25rem;
   height: 14rem;
-  transition-property: all;
+  transition-property: auto;
   transition-duration: 0.7s;
   transition-timing-function : ease;
 }
 
 .photo-1{
   top: 5rem;
-  left: 5rem;
+  left: 10rem;
 }
 
 .photo-2{
   top: 30rem;
-  left: 60rem;
+  left: 72rem;
 }
 
 .photo-3{
   top: 5rem;
-  left: 60rem;
-  width: 35rem;
-  height: 20rem;
+  left: 78rem;
+  width: 17rem;
+  height: 21rem;
 }
 
 .photo-4{
   top: 20rem;
-  left: 13rem;
+  left: 22rem;
   width: 40rem;
   height: 27rem;
 }
 
 .photo-5{
-  top: 9rem;
-  left: 36rem;
+  top: 7rem;
+  left: 42rem;
   width: 16rem;
   height: 9rem;
 }
 
 .photo-6{
-  top: 10rem;
-  left: 33rem;
+  top: 8rem;
+  left: 30rem;
   width: 50rem;
   height: 32rem;
 }
+
 .photo-7{
-  top: 10rem;
-  left: 9rem;
+  top: 5rem;
+  left: 3rem;
+  width: 16rem;
+  height: 20rem;
 }
+
 .photo-8{
-  top: 28rem;
-  left: 9rem;
+  top: 29rem;
+  left: 12rem;
+  height: 17rem;
+  width: 25rem;
 }
+
 .photo-9{
-  top: 15rem;
+  top: 19rem;
   left: 84rem;
   width: 17rem;
   height: 25rem;
 }
 
 .enlargePhoto {
-  width: 80rem;
+  width: max-content;
   height: 45rem;
-  top: 3rem;
-  left: 16rem;
+  top: auto;
+  left: auto;
   z-index: 1000;
 }
 
 .img-fluid{
   height: 100%;
   padding: 5px;
-  border: solid 1px #185284;
+  border: solid 1px #818181;
 }
 
 .delete {
-  right: 4rem;
-  top: 0
+  right: -2rem;
+  top: -4px;
 }
 
 .pointer{
@@ -126,3 +158,13 @@ body a {
 .slide-up{
   transform: translateY(-100%);
 }
+/*
+.transitionOk{
+  transition-property: all;
+  transition-duration: 0.7s;
+  transition-timing-function : ease;
+}
+
+.transitionNg{
+  transition-property: none;
+} */
